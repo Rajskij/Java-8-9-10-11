@@ -11,7 +11,8 @@ import java.util.stream.Collectors;
 public class DbRepository {
 
     private static DbRepository instance;
-    private List<BankCard> bankCards;
+
+    private final List<BankCard> bankCards;
 
     private final List<Subscription> subscriptions;
 
@@ -25,7 +26,7 @@ public class DbRepository {
 
     public static synchronized DbRepository getInstance() {
         if (instance == null) {
-            return new DbRepository();
+            instance = new DbRepository();
         }
 
         return instance;

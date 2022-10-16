@@ -3,6 +3,9 @@ Java Development Kit 11+
 Apache Maven 3.6.0+
 Git 2.24+
 ##Task
+
+<span style="color: red"> PREREQUISITES: </span> To check all tasks, run application.App from application module. 
+
 (1-2 stars)
 1. Create maven project with 5 modules (see Java 9 modules) :
 - jmp-bank-api
